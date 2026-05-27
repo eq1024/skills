@@ -1,6 +1,6 @@
 {
   "name": "eq-skills",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "EQ 前端分析技能包 - 为 Claude Code 提供 /eq:analyze-frontend 等分析命令",
   "bin": {
     "eq": "./bin/cli.js"
@@ -14,7 +14,7 @@
     "claude-code",
     "skills",
     "frontend",
-    "analysis" 
+    "analysis"
   ],
   "author": "vigo",
   "license": "MIT",
