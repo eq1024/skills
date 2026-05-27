@@ -5,7 +5,13 @@ description: "限制代码行为与注入约束，将代码行为约束写入当
 
 # 限制代码行为规则注入 (restriction-code)
 
-你现在的任务是将以下四个核心编码约束写入当前项目 AI 助手的全局或项目级系统提示词文件（例如 Claude Code 的 `.CLAUDE.md`，Cursor 的 `.cursorrules`，Windsurf 的 `.windsurfrules` 等，如果没有找到对应文件，请在项目根目录创建适合当前所处环境的规则文件）。
+你现在的任务是将以下四个核心编码约束写入当前项目 AI 助手的全局或项目级系统提示词文件中。
+
+**重要写入规则：**
+1. **必须先判断当前使用的是哪款 AI 助手。** 请通过检查项目中已有的专属配置目录或文件（如 `.kilo/` 目录代表 Kilo，`.cursorrules` 代表 Cursor，`.windsurfrules` 代表 Windsurf，`.CLAUDE.md` 代表 Claude Code 等）来推断。
+2. **如果无法明确判断，请务必先向用户提问**（例如：“您当前主要使用的是什么 AI 助手？Kilo、Cursor、Windsurf 还是 Claude Code？”）。
+3. **绝对不要在未确认的情况下盲目写入 `.cursorrules` 或其他特定文件**，以免写错配置文件导致规则不生效。
+4. 确认后，将规则追加或写入到该 AI 助手对应的配置文件中（若文件不存在则在项目根目录创建它）。
 
 ## 需要补充的内容如下：
 
