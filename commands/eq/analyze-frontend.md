@@ -5,11 +5,11 @@ category: Analysis
 tags: [frontend, analysis, architecture]
 ---
 
-对当前前端项目执行全面深度分析。
+对当前前端项目执行全面深度分析，使用 `analyze-frontend` skill。
 
 ## 执行
 
-1. 使用 Agent 工具启动分析代理，`subagent_type` 设为 `analyze-frontend`。
+1. 使用 Agent 工具启动分析代理，`subagent_type` 设为 `general-purpose`。
 2. 如果用户指定了项目路径，在 prompt 中告知代理；否则默认分析当前工作目录。
 
 ```
