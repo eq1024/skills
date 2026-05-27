@@ -1,3 +1,8 @@
+---
+name: "restriction-code"
+description: "限制代码行为与注入约束，将代码行为约束写入当前项目AI助手的全局或项目系统提示词文件中。"
+---
+
 # 限制代码行为规则注入 (restriction-code)
 
 你现在的任务是将以下四个核心编码约束写入当前项目 AI 助手的全局或项目级系统提示词文件（例如 Claude Code 的 `.CLAUDE.md`，Cursor 的 `.cursorrules`，Windsurf 的 `.windsurfrules` 等，如果没有找到对应文件，请在项目根目录创建适合当前所处环境的规则文件）。
