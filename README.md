@@ -1,6 +1,6 @@
 # EQ Skills
 
-EQ 前端分析技能包 — 为包括 Claude Code、Kilo 在内的十余种主流 AI Agent 编程助手提供命令行式的技能扩展。
+EQ 前端分析技能包 — 支持 `npx` 直接运行与 `npx skills` 库安装，为 Claude Code、Cursor 等十余种主流 AI Agent 编程助手提供命令行式的技能扩展。
 
 ## 支持的 AI 助手
 
@@ -45,6 +45,12 @@ eq          # 直接回车，进入交互式向导
 eq init     # 触发初始化向导（同上）
 eq list     # 列出当前支持的分析包
 eq help     # 查看帮助
+```
+
+**方式三：通过 Vercel Skills 安装**
+
+```bash
+npx skills add eq-skills
 ```
 
 执行后，按照命令行提示选择你要支持的 AI Agent（可多选）以及安装范围（全局 Global 或 当前项目 Local）。
