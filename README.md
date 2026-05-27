@@ -1,6 +1,6 @@
 # EQ Skills
 
-EQ 前端分析技能包 — 支持 `npx` 直接运行与 `npx skills` 库安装，为 Claude Code、Cursor 等十余种主流 AI Agent 编程助手提供命令行式的技能扩展。
+EQ 前端技能包 — 支持 `npx` 直接运行与 `npx skills` 库安装，为 Claude Code、Cursor 等十余种主流 AI Agent 编程助手提供命令行式的技能扩展。
 
 ## 支持的 AI 助手
 
