@@ -12,7 +12,7 @@ EQ 前端技能包 — 支持 `npx` 直接运行与 `npx skills` 库安装，为
 npx eq-skills
 ```
 
-**方式三二：通过 Vercel Skills 安装**
+**方式二：通过 Vercel Skills 安装**
 
 ```bash
 npx skills add eq-skills
