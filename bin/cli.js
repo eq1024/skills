@@ -70,6 +70,24 @@ async function interactiveInit() {
     ]
   });
 
+  // 扫描可用的 skills
+  const skillsDir = path.join(sourceDir, 'skills');
+  const availableSkills = fs.existsSync(skillsDir)
+    ? fs.readdirSync(skillsDir).filter(d => !d.startsWith('.'))
+    : [];
+
+  const selectedSkills = await checkbox({
+    message: '请选择要安装的 Skills (可多选):',
+    choices: availableSkills.map(name => ({ name, value: name, checked: true })),
+    loop: false,
+    pageSize: 15
+  });
+
+  if (selectedSkills.length === 0) {
+    console.log(pc.yellow('未选择任何 Skill，退出安装。'));
+    return;
+  }
+
   const targetDirs = [];
 
   for (const agentKey of agents) {
@@ -95,18 +113,33 @@ async function interactiveInit() {
     
     const skillsSrc = path.join(sourceDir, "skills");
     const skillsDest = path.join(targetDir, "skills");
-    if (fs.existsSync(skillsSrc)) {
-      copyDir(skillsSrc, skillsDest);
-      const names = fs.readdirSync(skillsSrc).filter(d => !d.startsWith("."));
-      console.log(`✅ Skills (${names.length}): ${names.join(", ")}`);
+    for (const name of selectedSkills) {
+      const src = path.join(skillsSrc, name);
+      const dest = path.join(skillsDest, name);
+      if (fs.existsSync(src)) {
+        copyDir(src, dest);
+      }
     }
+    console.log(`✅ Skills (${selectedSkills.length}): ${selectedSkills.join(", ")}`);
 
     const cmdsSrc = path.join(sourceDir, "commands");
     const cmdsDest = path.join(targetDir, target.config.cmdDir);
-    
+    // 只复制选中 skill 对应的 command 文件
     if (fs.existsSync(cmdsSrc)) {
-      copyDir(cmdsSrc, cmdsDest);
-      console.log(`✅ Commands 已安装.`);
+      for (const ns of fs.readdirSync(cmdsSrc)) {
+        if (ns.startsWith(".")) continue;
+        const nsPath = path.join(cmdsSrc, ns);
+        if (!fs.statSync(nsPath).isDirectory()) continue;
+        for (const name of selectedSkills) {
+          const cmdFile = path.join(nsPath, `${name}.md`);
+          if (fs.existsSync(cmdFile)) {
+            const destFile = path.join(cmdsDest, ns, `${name}.md`);
+            fs.mkdirSync(path.dirname(destFile), { recursive: true });
+            fs.copyFileSync(cmdFile, destFile);
+          }
+        }
+      }
+      console.log(`✅ Commands 已安装 (${selectedSkills.length} 个).`);
     }
   }
 
