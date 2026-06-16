@@ -26,7 +26,7 @@ description: "一键全局中文配置 — 检测当前 AI 助手并将中文输
 | 特征 | 对应助手 |
 |---|---|
 | `~/.claude/CLAUDE.md`、`CLAUDE.md`、`.claude/` | Claude Code |
-| `~/.kilo/`、`.kilo/` | Kilo |
+| `~/.config/kilo/`、`~/.kilo/`、`.kilo/` | Kilo |
 | `.cursorrules`、`.cursor/rules/` | Cursor |
 | `.windsurfrules` | Windsurf |
 | `~/.gemini/`、`.gemini/` | Gemini CLI |
@@ -45,7 +45,7 @@ description: "一键全局中文配置 — 检测当前 AI 助手并将中文输
 | 助手 | 全局配置文件 |
 |---|---|
 | Claude Code | `~/.claude/CLAUDE.md` |
-| Kilo | `~/.kilo/KILO.md` |
+| Kilo | `~/.config/kilo/CLAUDE.md`（或 `~/.config/kilo/AGENTS.md`） |
 | Cursor | `~/.cursorrules`（用户目录） |
 | Windsurf | `~/.windsurfrules`（用户目录） |
 | Gemini CLI | `~/.gemini/GEMINI.md` |
