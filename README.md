@@ -2,7 +2,7 @@
 
 # 🧰 eq Skills
 
-#### 我自己每天在用的一些 Agent Skill，都开源在这里
+#### 我自己每天在用的一些前端开发 Skill，都开源在这里
 
 [![License](https://img.shields.io/badge/License-MIT-3B82F6?style=for-the-badge)](./LICENSE)
 [![Skills](https://img.shields.io/badge/Skills-4-10B981?style=for-the-badge)](#-skills)
@@ -14,7 +14,7 @@
 
 </div>
 
-都是在自己项目里跑通了一段时间，确实省事，才搬出来开源的。没什么花活，就是几个挺实用的东西。
+都是在自己项目里使用和测试过的，确实省事，才搬出来开源的。没什么花活，就是几个挺实用的东西。
 
 这里的每个 Skill 都是 Agent 能直接加载的结构化指令集，遵循开放标准。无论是 Codex、Claude Code 还是 Cursor、Windsurf，基本都能装。
 
