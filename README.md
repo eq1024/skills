@@ -5,7 +5,7 @@
 #### 我自己每天在用的一些 Agent Skill，都开源在这里
 
 [![License](https://img.shields.io/badge/License-MIT-3B82F6?style=for-the-badge)](./LICENSE)
-[![Skills](https://img.shields.io/badge/Skills-4-10B981?style=for-the-badge)](#-skills)
+[![Skills](https://img.shields.io/badge/Skills-3-10B981?style=for-the-badge)](#-skills)
 
 ![Claude Code](https://img.shields.io/badge/Claude_Code-Skill-D97706?style=flat-square&logo=anthropic&logoColor=white)
 ![Kilo](https://img.shields.io/badge/codex-Skill-000000?style=flat-square)
@@ -24,10 +24,9 @@
 
 | 名字 | 一句话 |
 |---|---|
-| 🔍 [**analyze-frontend（前端分析）**](#-analyze-frontend前端项目深度分析) | 全面扫描前端项目，出具包含架构分层、文件树、Git审计等九个章节的万字体检报告 |
-| 🛡️ [**restriction-code（限制代码行为）**](#-restriction-code限制代码行为) | 给 AI 注入代码纪律（大道至简、谋定而后动等），防止它乱改代码、过度设计 |
-| 🇨🇳 [**setup-chinese-global（一键中文配置）**](#-setup-chinese-global一键中文配置) | 一键检测当前 AI 工具，并强制把它调教成全中文输出（且不改业务逻辑和变量名） |
-| 🎨 [**ux-review（UX 体验审查）**](#-ux-reviewux-体验审查) | 敲完代码跑一下，只针对本次修改的文件（或指定范围），从 7 个维度进行体验修复，绝不动核心业务逻辑 |
+| 🔍 [**analyze-frontend**](#-analyze-frontend前端项目深度分析) | 全面扫描前端项目，出具包含架构分层、文件树、Git审计等九个章节的万字体检报告 |
+| 🛡️ [**restriction-code**](#-restriction-code限制代码行为) | 给 AI 注入代码纪律（大道至简、谋定而后动等），防止它乱改代码、过度设计 |
+| 🎨 [**ux-review**](#-ux-reviewux-体验审查) | 敲完代码跑一下，只针对本次修改的文件（或指定范围），从 7 个维度进行体验修复，绝不动核心业务逻辑 |
 
 ---
 
@@ -115,35 +114,6 @@ npx skills add eq-skills
 ```
 
 → [SKILL.md](./skills/restriction-code/SKILL.md)
-
-</td></tr>
-</table>
-
-<table>
-<tr><td>
-
-### 🇨🇳 setup-chinese-global（一键中文配置）
-
-> *"懒得每次开新会话都跟 Agent 强调‘请用中文回复’了，直接写进它的 DNA 里。"*
-
-一键自动检测你当前用的到底是 Kilo、Claude Code 还是 Cursor、Windsurf。然后直接把**中文输出优先**的规则死死写进它的全局配置或记忆系统里。
-
-**它的核心原则**
-
-- 面向用户的对话、解释、报告必须是中文
-- 文档文件（如 README、注释）优先使用中文
-- 代码内部（变量名、函数名、commit 前缀）仍然保持英文，绝不动业务逻辑的命名规范
-- 技术术语支持中英混编，追求表达准确
-
-**怎么触发**
-
-```
-配置一下全局中文
-以后全用中文回复
-加载 setup-chinese-global
-```
-
-→ [SKILL.md](./skills/setup-chinese-global/SKILL.md)
 
 </td></tr>
 </table>
