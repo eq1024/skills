@@ -1,8 +1,8 @@
 <div align="center">
 
-# 🧰 eq Skills
+# 🤗 eq skills
 
-#### 我自己每天在用的一些 Agent Skill，都开源在这里
+#### 我自己每天在用的一些前端开发 Skill
 
 [![License](https://img.shields.io/badge/License-MIT-3B82F6?style=for-the-badge)](./LICENSE)
 [![Skills](https://img.shields.io/badge/Skills-3-10B981?style=for-the-badge)](#-skills)
@@ -14,9 +14,9 @@
 
 </div>
 
-都是在自己项目里跑通了一段时间，确实省事，才搬出来开源的。没什么花活，就是几个挺实用的东西。
+都是在自己项目里使用和测试过的，主打的就是一个实用。
 
-这里的每个 Skill 都是 Agent 能直接加载的结构化指令集，遵循开放标准。无论是 Codex、Claude Code 还是 Cursor、Windsurf，基本都能装。
+这里的每个 Skill 都会配置对应command(通过npx 方式按照时)，所以大部分时候直接使用 `/` 调用最方便
 
 ---
 
@@ -158,14 +158,7 @@ npx skills add eq-skills
 
 ## 🌟 关于
 
-这是我自己平时折腾 Agent（比如 Kilo、Cursor 等）时积攒的一套实用的指令集。如果你也有受够了 AI 啰嗦、过度设计、默认抛英文的时刻，直接拿去用吧。
+这是我自己前端平时开发过程中遇到的痛点解决方案集，后续会持续更新内容，如果能有任何一个skill帮助到你
 
-觉得有用给个 ⭐。
+欢迎给个 ⭐。
 
----
-
-<div align="center">
-
-自由使用 / 修改 / 再分发
-
-</div>
