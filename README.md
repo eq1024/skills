@@ -5,7 +5,7 @@
 #### 我自己每天在用的一些前端开发 Skill
 
 [![License](https://img.shields.io/badge/License-MIT-3B82F6?style=for-the-badge)](./LICENSE)
-[![Skills](https://img.shields.io/badge/Skills-3-10B981?style=for-the-badge)](#-skills)
+[![Skills](https://img.shields.io/badge/Skills-4-10B981?style=for-the-badge)](#-skills)
 
 ![Claude Code](https://img.shields.io/badge/Claude_Code-Skill-D97706?style=flat-square&logo=anthropic&logoColor=white)
 ![Kilo](https://img.shields.io/badge/codex-Skill-000000?style=flat-square)
@@ -27,6 +27,7 @@
 | 🔍 [**analyze-frontend**](#-analyze-frontend前端项目深度分析) | 全面扫描前端项目，出具包含架构分层、文件树、Git审计等九个章节的万字体检报告 |
 | 🛡️ [**restriction-code**](#-restriction-code限制代码行为) | 给 AI 注入代码纪律（大道至简、谋定而后动等），防止它乱改代码、过度设计 |
 | 🎨 [**ux-review**](#-ux-reviewux-体验审查) | 敲完代码跑一下，只针对本次修改的文件（或指定范围），从 7 个维度进行体验修复，绝不动核心业务逻辑 |
+| 🧠 [**i-have-adhd**](#-i-have-adhd厌蠢症) | 将每次回复塑造成 ADHD 友好的行动格式，减少遗忘、卡壳和跑题 |
 
 ---
 
@@ -156,9 +157,38 @@ npx skills add eq-skills
 
 ---
 
+<table>
+<tr><td>
+
+### 🧠 i-have-adhd（厌蠢症）
+
+> *"不是把答案写短，而是把输出塑造成 ADHD 大脑能直接行动的样子。"*
+
+这个 skill 会持续调整每次回复的结构：第一行先给下一步行动，多步骤任务编号，每轮重述当前状态，把离题问题留到最后。它还会给出具体时间估计，让已完成的工作和可见进展不再被埋没。
+
+**它遵循什么**
+
+1. **先行动**：把命令、路径或代码片段放在最前面
+2. **少而清楚**：多步骤工作用最少的编号步骤表达
+3. **跨轮记忆**：每轮重述任务进度和下一步行动
+4. **控制范围**：不把附带问题混进当前任务
+5. **让成果可见**：明确说出现在什么可以工作，并给出具体耗时
+
+**怎么触发**
+
+```
+/i-have-adhd
+```
+
+→ [SKILL.md](./skills/i-have-adhd/SKILL.md)
+
+</td></tr>
+</table>
+
+---
+
 ## 🌟 关于
 
 这是我自己前端平时开发过程中遇到的痛点解决方案集，后续会持续更新内容，如果能有任何一个skill帮助到你
 
 欢迎给个 ⭐。
-
